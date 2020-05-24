@@ -82,9 +82,7 @@ export default function Header() {
         </div>
       )}
       <div tabIndex={0} role="button" onKeyDown={toggleSD} onClick={toggleSD}>
-        {router.pathname !== '/' && (
-          <DrawerToggleButton className={styles['toggle-hamburger']} />
-        )}
+        <DrawerToggleButton className={styles['toggle-hamburger']} />
       </div>
       {sideDrawer && <SideDrawer handleClose={toggleSD} router={router} />}
       {router.pathname !== '/' && (
